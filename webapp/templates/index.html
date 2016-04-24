@@ -1,0 +1,74 @@
+{%extends 'base.html'%}
+{%block head%}
+{{super()}}
+{%endblock%}
+{%block body%}
+{{super()}}
+
+
+<!--Submitted to Sahu Sir-->
+<div class="ui grid">
+  <div class="row">
+    <div class="one wide column">
+    </div>
+    <div class="fourteen wide column">
+      <h3 align="center">GenreM - Music Genre Classifier</h3>
+    </div>
+    <div class="one wide column">
+      
+    </div>
+  </div>
+  <div class="row">
+    <div class="one wide column">
+
+    </div>
+    <div class="fourteen wide column">
+      <h3 align="center"><i>(Submitted to Sahu Sir)</i></h3>
+    </div>
+    <div class="one wide column">
+    </div>
+  </div>
+</div>
+
+<!--About Us-->
+
+<div style="max-height: 300px;width: 80%;
+    margin: 0 auto;">
+<div class="ui two column grid">
+  <div class="column">
+    <div class="ui raised segment">
+      <a class="ui red ribbon label">Project</a>
+      <p><br/>The project aim was to make a music genre classifier.
+      The project involves use of Machine Learning Techniques
+      of classification, specifically Logistic Regression along
+      with Gradient Descent.</p>
+      <a class="ui blue ribbon label">Group Members</a>
+      <p><br/>1.Mohit Tak(14576)<br/>
+      	 2.Abhishek Rastogi(14577)<br/>
+      	 3.Suyash Garg(14578)<br/>
+      	 4.Abhishek Negi(14579)<br/>
+      	 5.Himanshi Kaushik(14580)</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="ui raised segment">
+      <a class="ui orange right ribbon label">How does it classify Music?</a>
+      <p><br/>The present music genre classifier can categorize the music into two categories: Metal 
+      and Classical. The line of difference between the two genres is quite clear. However, concretely
+      the technique of Logistic Regression along with Gradient Descent is used to classify the music
+      such that the algorithm gives us the probability of the song being close to metal. The code is
+      written in high-level languages like Python and Octave.</p>
+      <a class="ui teal right ribbon label">Future Scope</a>
+      <p><br/>The future scope of the classifier is to categorize in many music genres. This would involve
+      using more sophisticated features for music classification.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<div style="position: relative;top: 30px;left: 650px">
+<button class="ui olive button" onclick="window.location.href='/demo'">See Demo!</button>
+</div>
+
+
+{%endblock%}

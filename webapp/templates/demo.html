@@ -1,0 +1,54 @@
+{%extends 'base.html'%}
+{%block head%}{{super()}}{%endblock%}
+{%block body%}
+{{super()}}
+
+<div class="ui internally grid">
+  <div class="row">
+    <div class="one wide column">
+    </div>
+    <div class="fourteen wide column">
+      <h3 align="center">Music Genre Classifier (Metal and Classical)</h3>
+    </div>
+    <div class="one wide column">
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="six wide column">
+ 
+    </div>
+    <div class="six wide column" style="position: relative;top: 40px;">
+    <form action="/demo" method="post">
+      <div class="ui action input large">
+  <input  type="text" name="filename" value="{{request.form.filename}}">
+  <input type="button" class="ui blue  labeled icon button" value="Select File">
+</div>
+    </div>
+    <div class="four wide column">
+ 
+    </div>
+  </div>
+</div>
+
+<div class="ui internally grid" style="position: relative;top: 50px;">
+<div class="row">
+    <div class="seven wide column">
+    </div>
+    <div class="two wide column">
+      <div class="ui buttons">
+  <button class="ui button" onclick="window.location.href='/'">Cancel</button>
+  <div class="or"></div>
+  <input type="submit" class="ui positive button"value="Classify!">
+ </form>
+</div>
+	<h3 align="center">{{ans}}</h3>
+    </div>
+    <div class="seven wide column">
+    </div>
+</div>
+
+</div>
+
+
+{%endblock%}

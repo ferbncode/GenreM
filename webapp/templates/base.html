@@ -1,0 +1,26 @@
+<html>
+<title>GenreM</title>
+<head>
+{%block head%}
+<script src="{{url_for('static', filename='js/jquery-1.11.0.min.js')}}"></script>
+<!-- Custom Theme files -->
+<link href="{{url_for('static', filename='css/style.css')}}" rel="stylesheet" type="text/css" media="all"/>
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/semantic.min.css')}}">
+<script type="text/javascript" src="{{url_for('static', filename='css/semantic.min.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='css/semantic.js')}}"></script>
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/semantic.css')}}">
+{%endblock%}
+</head>
+<body>
+{%block body%}
+<div class="ui stackable menu">
+  <div class="item">
+	  <img src="{{url_for('static', filename='images/me.jpg')}}">
+  </div>
+	  <a href='/'class="item"><strong>GenreM</strong></a>
+	  <a href='/demo'class="item">Demo</a>
+	  <a href='/'class="item">About Us</a>
+</div>
+{%endblock%}
+</body>
+</html>
