@@ -193,7 +193,7 @@ def plotSegmentationResults(flagsInd, flagsIndGT, classNames, mtStep, ONLY_EVALU
             ax1.plot(numpy.array(range(len(flagsIndGT))) * mtStep + mtStep / 2.0, flagsIndGT + 0.05, '--r')
         plt.xlabel("time (seconds)")
         if accuracy >= 0:
-            plt.title('Accuracy = {0:.1f}%'.format(100.0 * accuracy))
+            plt.title('Accuracy = {:.1%}'.format(accuracy))
 
         ax2 = fig.add_subplot(223)
         plt.title("Classes percentage durations")
@@ -848,7 +848,7 @@ def speakerDiarization(fileName, numOfSpeakers, mtSize=2.0, mtStep=0.2, stWin=0.
         purityClusterMean, puritySpeakerMean = evaluateSpeakerDiarization(cls, flagsGT)
         print "{0:.1f}\t{1:.1f}".format(100*purityClusterMean, 100*puritySpeakerMean)
         if PLOT:
-            plt.title("Cluster purity: {0:.1f}% - Speaker purity: {1:.1f}%".format(100*purityClusterMean, 100*puritySpeakerMean) )
+            plt.title("Cluster purity: {:.1%} - Speaker purity: {:.1%}".format(purityClusterMean, puritySpeakerMean) )
     if PLOT:
         plt.xlabel("time (seconds)")
         #print sRange, silAll    
