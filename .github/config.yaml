@@ -1,0 +1,11 @@
+defaults:
+  comment: "It is recommended not to do this. Please read the contributing guidelines."
+  max_comments: 10
+
+matches:
+- id: "pylint-check-removed"
+  regex: ".*pylint: disable*"
+  comment: "Please don't disable 'pylint' checks."
+
+- id: "bad-language"
+  regex: "\\bfuck*"
